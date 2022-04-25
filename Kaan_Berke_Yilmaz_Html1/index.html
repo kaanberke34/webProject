@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+    <head>
+        <meta charset="UTF-8">
+<title>Learning HTML</title>
+<style>
+body{
+background-image: url('images/background.jpeg')
+}
+#header,#orange,#kiwifruit,#footer{
+text-align:center;
+}
+hr{
+width:200px;
+height:3px;
+}
+.li_n{
+    list-style-type:none;
+}
+.p_h1{
+    color:red;
+    border-bottom:1px dotted red;
+    width:fit-content;
+    margin:auto;
+}
+.a_info{
+    display:block;
+    margin-bottom:25px
+}
+.p_info{
+    display:block;
+    margin-bottom:25px
+}
+.to_top{
+    background-color:
+    transparent;border:none
+    }
+    .image{
+        height:200px; width:200px 
+    }
+</style>
+</head>
+<body>
+<header id="header">
+<h1 class="p_h1">Fruits</h1>
+<hr>
+</header>
+<section id="orange">
+    <ul >
+    <li class="li_n"><a href="index.html#orange">Orange</a></li>
+    <li class="li_n"><a href="index.html#kiwifruit"> Kiwifruit</a></li>
+    </ul>
+<p>Lorem ipsum Lorem ipsum Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+<hr>
+<button onclick="topFunction()" class="to_top">To Top</button>
+<h2>Orange</h2>
+
+<a href="index.html#orange-information"  class="a_info">More Information</a><br>
+<img class="image_200" src="images/orange.jpeg" alt="orange">
+<p id="orange-information">Lorem ipsum Lorem ipsum Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+<hr>
+<button onclick="topFunction()" class="to_top">To Top</button>
+<hr>
+</section>
+<section id="kiwifruit">
+
+<h2>Kiwifruit</h2>
+<a href="index.html#kiwifruit-information" class="p_info">More Information</a><br>
+<img class="image_200" src="images/kiwi.jpeg" alt="kiwi">
+<p id="kiwifruit-information">Lorem ipsum Lorem ipsum Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+<hr>
+<button onclick="topFunction()" class="to_top">To Top</button>
+
+
+</section>
+<section id="lists">
+    <p>Fruit breakdown by origin</p>
+        <ul>
+            <li>Simple</li>
+            <li>Focused</li>
+            <li>Components</li>
+        </ul>
+        <ol type="A">
+        <li>Types of fleshy fruits:
+            <ul>
+                <li>True berry</li>
+                <li>Pepo</li>
+                <li>Hesperidium</li>
+                <li>Aggregate fruit</li>
+            </ul></li>
+                <li>Seedless fruits:
+                <ul>
+                <li>Bananas</li>
+                <li>Pineapples</li>
+            </ul></li>
+            </ol>
+<p>Accessory fruit:</p>
+<ol type="1" start="5">
+<li>Apple</li>
+<li>Pineapples</li>
+<li>Rose hip</li>
+</ol>
+</section>
+<footer id="footer">
+<hr>
+<p>Fruits </p>
+<p>Lorem ipsum Lorem ipsum Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+
+<button onclick="topFunction()" class="to_top">To Top</button>
+</footer>
+<script>
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+    <head>
+        <meta charset="UTF-8">
+    <title>Tables</title>
+<style>
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  
+} 
+
+th,td {
+  border: 1px solid black;
+}
+
+table.a {
+  table-layout: auto;
+}
+.first_table{
+    width:100%;
+    border:1px solid black;
+    padding:10px;
+    margin-bottom:5px;
+}
+.third_table{
+    width: 50%;
+    border: 1px solid black;
+    padding:10px;
+}
+.image{
+    width:200px;
+    height:50px;
+}
+</style>
+</head>
+<body>
+    <div class="first_table">
+        
+        <h2>First table</h2>
+        <table>
+
+  <tr>
+    <td>
+        <p>Siauliai State College</p>
+    <img class="image" src="logo.png" alt="logo"></td>
+    <td><ul>
+        <li>Faculty of Health and care</li>
+        <li>Faculty of Business and technologies</li>
+        </ul></td>
+  </tr>
+    <tr>
+    <td>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</td>
+    <td>
+        <p>Link to the Siauliai State College</p>
+        <a href="#">SVAKO</a>
+    </td>
+  </tr>
+        </table>
+        <h2>Second table</h2>
+        <table>
+				<tr>
+					<th>Computer device</th>
+					<th colspan="2">About device</th>
+				</tr>
+				<tr>
+		<th rowspan="2">Keyboard</th>
+		<td>Picture</td>
+		<td>Description</td>
+		</tr>
+		<tr>
+		<td>?</td>
+		<td>?</td>
+		</tr>
+		<tr>
+		<th rowspan="2">Mouse</th>
+		<td>?</td>
+		<td>?</td>
+		</tr>
+		<tr>
+		<td>?</td>
+		<td>?</td>
+		</tr>
+    </table>
+    </div>
+    
+<div class="third_table">
+<h1>Third Table</h1>
+<p style="color:red;text-align:center">"Information about Erasmus students"</p>
+<table class="a">
+  <tr>
+   <th>Name </th>
+    <th>Surname</th>
+    <th>University</th>
+    <th>E-mail</th>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+  </tr>
+<tr>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+  </tr>
+</table>
+
+</div>
+</body>
+</html>
