@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Css3
+        </title>
+        <style>
+        @page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 3cm;
+    margin-right: 1cm;
+    font-size:12px;
+    font-family: "Times New Roman";
+}
+            header{
+                background-color:#504747;
+            }
+            nav{
+                background-color:#504747;
+            }
+            .image{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top:25px;
+                padding-bottom:25px;
+            }
+            ul{
+               list-style-type: none;
+  margin: 0;
+  padding: 25px;
+            }
+            li{
+               display: inline;
+               margin:0 40px 0 40px;
+               
+            }
+            ul li a{
+                text-decoration:none;
+                color:white;
+                margin: 5px;
+                text-align: center;
+                display:grid;
+            }
+            .icon{
+                color:black;
+                margin:auto;
+            }
+            section{
+                background-color:#ebeaea;
+            }
+            .center{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .g_center{
+                display:grid;
+                justify-content:center;
+                align-items:center;
+                padding:20px;
+            }
+            .canv{
+                background-color:white;
+                padding:20px;
+                width:600px;
+            }
+            footer{
+                background-color:#ebeaea;
+                color:grey;
+            }
+            h2{
+                color:green;
+            }
+            .green{
+                color:green !important;
+            }
+           hr{
+               margin:auto;
+           }
+           .w_70{
+               width:70%;
+           }
+           .seperator{  
+               margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+               
+           }
+    
+    @media only screen and (max-width: 400px) {
+  .image {
+    justify-content:center;
+    align-items:center;
+    display:flex;
+  }
+  .canv{
+      width:auto;
+  }
+  .center{
+      display:grid;
+  }
+  .responsive{
+      width:50%;
+  }
+  .content{
+      margin-left:25%;
+      margin-right:25%;
+  }
+  .seperator{
+      max-width: 100%;
+    height: auto;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="image" src="images/logo.png" alt="logo">
+            
+        </header>
+        <nav>
+            <ul class="center">
+                        <li><a href="#"><img class="icon"  src="images/link_1.png" alt="link_1">Homepage</a></li>
+                        <li><a href="#"><img class="icon"  src="images/link_2.png" alt="link_2">Journal</a></li>
+                        <li><a href="#"><img class="icon"  src="images/link_2.png" alt="link_3">Portfolio</a></li>
+                        <li><a href="#"><img class="icon"  src="images/link_4.png" alt="link_4">About me</a></li>
+                        <li><a href="#"><img class="icon"  src="images/link_5.png" alt="link_5">Contact</a></li>
+                    </ul>
+        </nav>
+        <section class="g_center" >
+            <div class="canv" >
+                <img class="image responsive" src="images/image.png" alt="image_content">
+                <div class="content">
+                <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+                <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum... <a class="green" href="#">Continue Reading..</a></p></div>
+            </div>
+        </section>
+        <footer>
+            <img class="seperator" src="images/separator.png" alt="seperator">
+            <span class="center">2021 Berke. All Rights Reserved</span>
+       
+        </footer>
+    </body>
+</html>
