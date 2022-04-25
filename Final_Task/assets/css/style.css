@@ -1,0 +1,226 @@
+@font-face {
+  font-family: usedFont;
+  src: url(../font/BebasNeue-Regular.ttf);
+}
+@page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 3cm;
+    margin-right: 1cm;
+    font-size:12px;
+    font-family: "Times New Roman";
+}
+body {
+  background-image: linear-gradient(#fe6953, #f6a136, #fe6953, #161c28);
+  font-family: usedFont;
+  font-size: 24px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header li {
+  display: inline;
+  margin: 5px;
+  font-size: 24px;
+}
+@media screen and (max-width: 500px) {
+  header li {
+    display: flex !important;
+  }
+}
+header li:hover {
+  background-color: honeydew;
+  border-radius: 10px;
+}
+header li:hover a {
+  color: black;
+}
+header a {
+  text-decoration: none;
+  color: honeydew;
+  margin: 10px;
+}
+section {
+  margin: auto;
+  max-width: 50%;
+  top: 0;
+  bottom: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 64px;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+table {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid transparent;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  background-color: snow;
+}
+tr td:nth-child(3) {
+  color: green;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+input,
+textarea {
+  background-color: snow;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  color: black;
+  font-family: usedFont;
+  padding: 5px;
+  font-size: 20px;
+}
+button {
+  background-color: snow;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  color: black;
+  font-family: usedFont;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .half {
+    width: 100% !important;
+  }
+}
+.half {
+  width: 50%;
+}
+.half ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.half ul li {
+  text-align: center;
+}
+.center_h2 {
+  text-align: center;
+}
+footer {
+  padding: 40px;
+  text-align: center;
+}
+.fancy {
+      text-shadow: 10px 10px 10px black;
+}
+.responsive {
+  width: 25%;
+}
+@media screen and (max-width: 1200px) {
+  .responsive {
+    width: 50% !important;
+  }
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .responsive {
+    width: 100% !important;
+  }
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.image:hover {
+  box-shadow: 0 0 6px rgb(35 173 255);
+}
+.image {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.center_iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 400px;
+}
+@media screen and (max-width: 600px) {
+  .center_iframe {
+    max-width: 200px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .center_iframe {
+    max-width: 133px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .center_iframe {
+    max-width: 125px !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .center_iframe {
+    max-width: 100px !important;
+  }
+}
+.media {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.media li a {
+  margin-left: 10px;
+  color: snow;
+}
+
+.media_icon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 512px) {
+  .media li a {
+    margin-left: 10px;
+    color: snow;
+    font-size: 13px !important;
+  }
+
+  .media_icon {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
